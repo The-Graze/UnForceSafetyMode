@@ -8,7 +8,7 @@ namespace ForceSafetyMode
     {
         static bool Prefix(ref bool __result)
         {
-            __result = true;
+            __result = false;
             return false;
         }
     }

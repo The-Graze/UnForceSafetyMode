@@ -6,11 +6,8 @@ namespace ForceSafetyMode
     [BepInPlugin(PluginInfo.GUID, PluginInfo.Name, PluginInfo.Version)]
     public class SafetyMode : BaseUnityPlugin
     {
-        internal static ManualLogSource Log;
-
-        public void Start()
+        SafetyMode()
         {
-            Log = base.Logger;
             HarmonyPatches.ApplyHarmonyPatches();
         }
     }
